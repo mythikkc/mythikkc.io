@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobar DNI</title>
+    <link rel="stylesheet" href="dni.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Comprobar DNI</a></li>
+                <li><a href="#">Otro Programa</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="form-section">
+            <h1>Comprobar DNI</h1>
+            <form id="dniForm">
+                <div class="form-group">
+                    <label for="dniNumber">DNI Número:</label>
+                    <input type="number" id="dniNumber" name="dniNumber" placeholder="Escribe tu número de DNI" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="dniLetter">DNI Letra:</label>
+                    <input type="text" id="dniLetter" name="dniLetter" maxlength="1" placeholder="Escribe la letra" required>
+                </div>
+                <button type="submit">Comprobar</button>
+            </form>
+            <p id="resultMessage"></p>
+        </section>
+    </div>
+
+    <script src="dn1.js"></script>
+</body>
+</html>
